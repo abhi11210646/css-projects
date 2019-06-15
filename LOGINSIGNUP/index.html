@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>
+        Login / SignUp
+    </title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    </link>
+</head>
+
+<body>
+    <div class="full-page">
+        <div class="auth-container">
+            <div class="login-page">
+                <div class="login-header">
+                    Login
+                </div>
+                <form (submit)="$event.preventDefault()">
+                    <div class="input-field">
+                        <label for="email">Email Address</label>
+                        <input type="text" autocomplete="off" name="email" placeholder="Type your email here..." />
+                    </div>
+                    <div class="input-field">
+                        <label for="password">Password</label>
+                        <input type="password" name="pasword" placeholder="Type your password here..." />
+                    </div>
+                    <div class="button-wrap">
+                        <input type="button" value="Login" />
+                    </div>
+                </form>
+            </div>
+            <div class="hide signup-page">
+                signup Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

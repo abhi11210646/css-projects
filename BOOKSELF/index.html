@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Book Self</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    </link>
+</head>
+
+<body>
+    <main>
+        <section class="search-bar">
+            <div class="header-logo">
+                <img src="assets/images/bookshelf.png" alt="bookself logo">
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchBox" placeholder="Enter search term here..." />
+                <input type="button" onclick="onBookSearch()" value="Search" />
+            </div>
+        </section>
+        <section class="image-list" id="image-list">
+            <script id="image-list-template" type="text/x-handlebars-template">
+                    {{#each books}}
+                    <article>
+                        <p class="book-title">{{volumeInfo.title}}</p>
+                        {{#if volumeInfo.imageLinks}}
+                        <img src="{{volumeInfo.imageLinks.thumbnail}}" alt="book cover" />
+                        {{else}}
+                        <img src="https://unsplash.com/200/200" alt="book cover" />
+                        {{/if}}
+                        {{#if volumeInfo.authors}}
+                        <p class="book-auther">
+                          By - {{#each volumeInfo.authors}} 
+                                 <span>{{this}}</span>
+                                {{/each}}
+                        </p>
+                        {{/if}}
+                    </article>
+                    {{/each}}
+            </script>
+        </section>
+        <div id="loader" class="hide"><p>Loading...</p></div>
+    </main>
+    <script type="text/javascript" src="assets/js/books.js">
+    </script>
+</body>
+
+</html>

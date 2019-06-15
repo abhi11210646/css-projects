@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.page-container {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background-image: url(./../images/049.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+}
+.page-container::after {
+    position: absolute;
+    background: black;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    content: "";
+    opacity: 0.5;
+}
+
+.page-center {
+    position: absolute;
+    max-width: 640;
+    color: white;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    right: 0px;
+    margin: 0 auto;
+    width: 100%;
+        transform: translateY(-50%);
+    text-align: center;
+}
+.page-center input {
+    color: white;
+    background-color: green;
+    border: none;
+    padding: 13px;
+    margin: 10px;
+}
+
+p.para {
+     letter-spacing: 1px;
+    text-align: center;
+    float: left;
+    line-height: 23px;xz
+    width: 100%;
+    font-size: 16px;
+    font-family: sans-serif;;
+}
+
+p.para::first-letter{
+    text-transform:uppercase;
+    color:red;
+}
