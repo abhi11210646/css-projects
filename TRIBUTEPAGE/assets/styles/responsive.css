@@ -1,0 +1,20 @@
+@media screen and (max-width:1200px) {
+    .headline h2 {
+        font-size: 300%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .headline h2 {
+        font-size: 200%;
+    }
+    .headline {
+        padding-top: 3%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .headline h2 {
+        font-size: 100%;
+    }
+}
