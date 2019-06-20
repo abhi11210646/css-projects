@@ -2,12 +2,13 @@
 
 <head>
     <title>Dr. A.P.J. Abdul Kalam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/responsive.css">
 </head>
 
 <body>
-    <main>
+    <main id="main">
         <header class="landing">
             <nav>
                 <ul>
@@ -23,8 +24,13 @@
                 </ul>
             </nav>
             <div class="legend-intro">
-                <h1>Dr. A.P.J. Abdul Kalam</h1>
+                <h1 id="title">Dr. A.P.J. Abdul Kalam</h1>
                 <p>&nbsp;-The 'Missile Man' of India</p>
+            </div>
+            <!--  different layout -->
+            <div class="hide" id="img-div">
+                <img src="" alt="" id="image" style="max-width:100%; display:block">
+                <p id="img-caption">text</p>
             </div>
         </header>
         <section id="About" class="pd about-section">
@@ -32,7 +38,7 @@
                 <h2>About </h2>
                 <hr />
             </div>
-            <article>
+            <article id="tribute-info">
                 <p>
                     Avul Pakir Jainulabdeen Abdul Kalam, better known as APJ Abdul Kalam, was born on 15 October 1931,
                     in
@@ -136,8 +142,10 @@
                         Tablet” for healthcare in rural areas.</li>
                 </ul>
             </article>
+            <a id="tribute-link" href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank">Read More</a>
         </section>
     </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>

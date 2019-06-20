@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "TRIBUTEPAGE",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
