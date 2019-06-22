@@ -1,0 +1,176 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), */
+#welcome-section {
+    height: 100vh;
+    position: relative;
+    background-image: url("../images/IMG_20190319_182623_080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 28%;
+}
+
+.header-intro p {
+    text-transform: capitalize;
+}
+
+.header-intro {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+    height: 31vh;
+    background-color: orangered;
+    top: 53%;
+    left: 27%;
+    color: white;
+    transform: translate(-53%, -27%);
+}
+
+#navbar {
+    position: fixed;
+    background-color: orangered;
+    width: 100%;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5%;
+    font-weight: bold;
+}
+
+.nav-list li {
+    margin: 10px;
+    list-style: none;
+}
+
+.nav-list li a {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-list li a:hover {
+    background-color: brown;
+}
+
+#projects {
+    background-color: yellowgreen;
+    padding: 10px;
+}
+
+.projects-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.project-tile {
+    flex-basis: 200px;
+    margin: 10px;
+    color: white;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+}
+
+.project-tile .project-title,
+.project-tile .project-links {
+    background-color: orangered;
+    padding: 10px;
+    text-align: center;
+
+}
+
+#project-link {
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+
+.project-tile img {
+    max-width: 100%;
+    height: 200px;
+}
+
+.project-tile .overlay {
+    background-color: rgba(0, 128, 0, 0.527);
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.project-tile .overlay:hover {
+    display: block;
+}
+
+#about {
+    background-color: rosybrown;
+    padding-bottom: 20px;
+}
+
+.about-headline {
+    background-color: white;
+    /* height: 30vh; */
+    width: 70vw;
+    margin: 0 auto;
+    border-radius: 29px;
+    text-align: justify;
+    position: relative;
+    padding: 27px 17px;
+}
+
+.about-headline p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 25px;
+}
+
+.headline h2 {
+    font-size: 200%;
+    text-align: center;
+}
+
+.headline hr {
+    height: 2px;
+    border: none;
+    margin-top: 2%;
+    background-color: orangered;
+}
+
+.headline {
+    margin: 0 auto;
+    color: white;
+    padding: 2%;
+    width: 50%;
+}
+
+#footer {
+    background-color: orangered;
+    padding: 10px;
+    height: 5%;
+}
+
+#footer .social-links a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+.social-links {
+    text-align: center;
+}

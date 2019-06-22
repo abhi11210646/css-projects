@@ -1,0 +1,11 @@
+@media only screen and (max-width:450px) {
+    #welcome-section {
+        background-position: right;
+    }
+
+    .header-intro {
+        width: 63vw;
+        height: 15vh;
+        left: 37%;
+    }
+}
